@@ -77,7 +77,7 @@ int rt_hw_rt3020_init(const char *name, struct rt_sensor_config *cfg);
 #### 初始化示例
 
 ```
-#include "sensor_rt_rt3020.h"
+#include "rt_rt3020_sensor_v1.h"
 
 int rt3020_port(void)
 {

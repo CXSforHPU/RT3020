@@ -1,5 +1,5 @@
 
-#include "sensor_rt_rt3020.h"
+#include "rt_rt3020_sensor_v1.h"
 
 #define DBG_ENABLE
 #define DBG_LEVEL DBG_LOG
@@ -215,7 +215,7 @@ static rt_err_t _rt3020_set_power(rt_sensor_t sensor, rt_uint8_t power)
 }
 
 
-static rt_size_t rt3020_fetch_data(struct rt_sensor_device *sensor, void *buf, rt_size_t len)
+static RT_SIZE_TYPE rt3020_fetch_data(struct rt_sensor_device *sensor, void *buf, rt_size_t len)
 {
     struct rt3020_dev *_rt3020_dev = sensor->parent.user_data;
     struct rt_sensor_data *data = buf;

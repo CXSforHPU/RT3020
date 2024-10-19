@@ -5,8 +5,10 @@ src   = []
 cwd   = GetCurrentDir()
 
 # add rt3020 src files.
-src += Glob('sensor_rt_rt3020.c')
 src += Glob('libraries/rt3020.c')
+
+if GetDepend('PKG_RT3020_USING_SENSOR_V1'):
+    src += ['rt_rt3020_sensor_v1.c']
 
 # add rt3020 include path.
 path  = [cwd, cwd + '/libraries']
