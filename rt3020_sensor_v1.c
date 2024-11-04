@@ -1,5 +1,5 @@
 
-#include "rt_rt3020_sensor_v1.h"
+#include "rt3020_sensor_v1.h"
 
 #define DBG_ENABLE
 #define DBG_LEVEL DBG_LOG
